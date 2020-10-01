@@ -21,7 +21,7 @@
 	    <!--  Start gazebo  -->
 		<include file="$(find jackal_gazebo)/launch/jackal_world.launch" pass_all_args="true"/>
 	    <!--  Start Rviz  -->
-		<include file="$(find jackal_viz)/launch/view_robot.launch"/>
+	<!--	<include file="$(find jackal_viz)/launch/view_robot.launch"/>-->
 	    <!--  Start Navigation  -->
 		<include file="$(find jackal_navigation)/launch/odom_navigation_demo.launch"/>
 	</group>
