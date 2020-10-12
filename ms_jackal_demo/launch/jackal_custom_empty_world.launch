@@ -1,4 +1,12 @@
-<arg name="use_sim_time" default="true" />
+<!--
+    
+    Microsoft IROS Demo 2 launch file
+    Author: Eric
+
+-->
+
+<launch>
+  <arg name="use_sim_time" default="true" />
   <arg name="gui" default="true" />
   <arg name="headless" default="false" />
   <arg name="world_name" default="$(find ms_jackal_demo)/worlds/empty.world" />
@@ -35,3 +43,4 @@
     <arg name="config" value="$(arg config)" />
     <arg name="joystick" value="$(arg joystick)" />
   </include>
+</launch>
