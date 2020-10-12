@@ -18,8 +18,14 @@
 		<param name="robot_description" command="$(arg urdf_file)" />
 
 
-	    <!--  Start Rviz  -->
-	<!--	<include file="$(find jackal_viz)/launch/view_robot.launch"/>-->
+	
+	  <!-- Configuration of Jackal which you would like to simulate.
+	       See jackal_description for details. -->
+	  <arg name="config" default="$(arg default_config)" />
+
+	  <!-- Optionally enable teleop for the simulation -->
+	  <arg name="joystick" default="true" />
+	
 	    <!--  Start Navigation  -->
 		<include file="$(find jackal_navigation)/launch/odom_navigation_demo.launch"/>
 	    <!--  Start gazebo  -->
