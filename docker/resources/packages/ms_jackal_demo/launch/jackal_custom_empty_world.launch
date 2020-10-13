@@ -1,7 +1,7 @@
 <!--
     
     Microsoft IROS Demo 2 launch file
-    Author: Eric
+    Author: Eric Vollenweider
 
 -->
 
@@ -34,9 +34,9 @@
     <arg name="world_name" value="$(arg world_name)" />
   </include>
 
-   <!-- SPAWN JACKAL -->
-    
-    <!-- Configuration of Jackal which you would like to simulate.
+  <!-- SPAWN JACKAL -->
+
+  <!-- Configuration of Jackal which you would like to simulate.
        See jackal_description for details. -->
   <arg name="config" default="base" />
 
@@ -50,6 +50,5 @@
   </include>
 
   <!-- Spawn Jackal -->
-  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
-	      args="-urdf -model jackal -param robot_description -x $(arg x) -y $(arg y) -z $(arg z) -R 0 -P 0 -Y $(arg yaw)" />
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model jackal -param robot_description -x $(arg x) -y $(arg y) -z $(arg z) -R 0 -P 0 -Y $(arg yaw)" />
 </launch>
