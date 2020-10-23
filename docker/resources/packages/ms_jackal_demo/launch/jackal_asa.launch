@@ -16,7 +16,7 @@
   <node pkg="tf" type="static_transform_publisher" name="anchor_tf" args="0 0 0 -0.5 0.5 0.5 0.5 anchor anchor_rot 100" />
 
   <!-- ASA (required) -->
-  <include file="$(find asa_ros)/launch/asa_ros.launch" if="$(arg use_asa)">
+  <include file="$(find asa_ros)/launch/asa_ros.launch">
     <arg name="anchor_id" value="3ca83875-1700-4ad2-90fc-62a0759d77fe" />
     <arg name="anchor_frame_id" value="anchor" />
   </include>
